@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang=“en”>
+
+<head>
+    <meta name="robots" content="noindex" />
+    <title>JZ 94.5 | JBX Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/vivify.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
+        < script type = "text/javascript"
+        src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" >
+    </script>
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data1', function (
+                data) {
+                var template = Handlebars.compile($('#item-template').html())
+                $('#viewer').html(template(data.data1))
+            })
+        })
+    </script>
+    <script id="item-template" type="text/x-handlebars-template">
+
+        <div class="option-wrapper">
+        <div class="flipped">
+    <div class="option-spacer"></div>
+        {{#each this}}
+        <button onclick="inject1();snackbar();document.getElementById('webform').action = 'https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data1/{{id}}'" class="option-button delete-option">
+            <div class="option-container">
+                
+                <div class="option-image-container">{{{imageUrl}}}</div>
+                <h4>{{title}}</h4>
+               <p>{{description}}</p>
+                  
+               {{id}}
+            </div> 
+        </button>  
+        <br> 
+            {{/each}}
+<div class="option-spacer" style="height: 70px;"></div>
+          
+        </div>
+
+    </div>
+        </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data2', function (
+                data) {
+                var template = Handlebars.compile($('#item-template2').html())
+                $('#viewer2').html(template(data.data2))
+            })
+        })
+    </script>
+    <script id="item-template2" type="text/x-handlebars-template">
+        <div class="option-wrapper">
+        <div class="flipped">
+        <div class="option-spacer"></div>
+            {{#each this}}
+            <button onclick="inject2();snackbar();document.getElementById('webform').action = 'https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data2/{{id}}'" class="option-button delete-option">
+                <div class="option-container">
+                    
+                    <div class="option-image-container">{{{imageUrl}}}</div>
+                    <h4>{{title}}</h4>
+                   <p>{{description}}</p>
+                      
+                   {{id}}
+                </div> 
+            </button>  
+            <br> 
+                {{/each}}
+                <div class="option-spacer opec" style="height: 70px;"></div>
+            </div>
+            </div>
+            </script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data3', function (
+                data) {
+                var template = Handlebars.compile($('#item-template3').html())
+                $('#viewer3').html(template(data.data3))
+            })
+        })
+    </script>
+    <script id="item-template3" type="text/x-handlebars-template">
+        <div class="option-wrapper">
+            <div class="flipped">
+            <div class="option-spacer"></div>
+                {{#each this}}
+                <button onclick="inject3();snackbar();document.getElementById('webform').action = 'https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data3/{{id}}'" class="option-button delete-option">
+                    <div class="option-container">
+                        
+                        <div class="option-image-container">{{{imageUrl}}}</div>
+                        <h4>{{title}}</h4>
+                       <p>{{description}}</p>
+                          
+                       {{id}}
+                    </div> 
+                </button>  
+                <br> 
+                    {{/each}}
+                    <div class="option-spacer opec" ></div>
+                </div>
+                </div>
+                </script>
+</head>
+
+<body>
+    <script type="text/javascript" id="postscript1" src="putdata1.js">
+
+    </script>
+    <script type="text/javascript" id="postscript2" src="putdata2.js">
+
+    </script>
+    <script type="text/javascript" id="postscript3" src="putdata3.js">
+
+    </script>
+ <header>
+
+        <nav >
+
+            <img class="logo" src="Branding/JBX Beta Logo.svg">
+            <ul class="right">
+                <li>
+                    <a href="" claWss="black-text">Contact Us</a>
+                </li>
+                <li>
+                    <a href="" class="black-text">Report An Issue</a>
+                </li>
+                <li>
+                    <a href="" class="black-text">Privacy Policy</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="spacer"></div>
+
+    <div class="main-content ">
+
+            <aside class="left-sect">
+                    <div class="company-branding">
+                        <img style="filter: invert(100);" class="company-logo" src="/Company Logo/Jz large white logo.svg">
+                    </div>
+                    <div class="side-navigation">
+                        <a class="large-button" href="jz945-post.html"><i class="material-icons left">add</i>New Post</a>
+                        <br>
+        
+                        <a class="leading-top-border default-buttons" href="jz945-post.html">Delete Post</a>
+                        <br>
+                       
+        
+                    </div>
+                </aside>
+
+
+        <div class="right-sect vivify fadeInBottom delay-500">
+
+
+
+            <section>
+                <div class="top-nav">
+                    <h5 class="text-h5">Delete Post</h5>
+                    <p>Select the location of your post below. Next select the post for deletion. Then click confirm. All data deleted can not be recovered.</p>
+
+                    <div class="tab-navigation">
+                        <h4>Select</h4>
+                        <button
+                            onclick="inject1();p1();snackbar();document.getElementById('webform').action = 'https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data1'">Slideshow</button>
+                        <button
+                            onclick="inject2();p2();snackbar();document.getElementById('webform').action = 'https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data2'">DJ
+                            Section</button>
+                        <button
+                            onclick="inject3();p3();snackbar();document.getElementById('webform').action = 'https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data3'">Sales
+                            Team</button>
+                    </div>
+
+                    <br>
+                    <script>
+                        function inject1() {
+                            document.getElementById("postscript2").src = "#";
+                            document.getElementById("postscript3").src = "#";
+                            document.getElementById("postscript1").src = "/putdata1.js";
+                        }
+                    </script>
+                    <script>
+                        function inject2() {
+                            document.getElementById("postscript1").src = "#";
+                            document.getElementById("postscript3").src = "#";
+                            document.getElementById("postscript2").src = "/putdata2.js";
+                        }
+                    </script>
+                    <script>
+                        function inject3() {
+                            document.getElementById("postscript1").src = "#";
+                            document.getElementById("postscript2").src = "#";
+                            document.getElementById("postscript3").src = "/putdata3.js";
+                        }
+                    </script>
+                    <div id="test1" class="col s12">
+                        <form id="webform" action="">
+
+
+                            <input style="display: none;" type="text" id="title" name="title" placeholder="Title">
+                            <br>
+
+                            <input style="display: none;" type="text" id="link" name="link" placeholder="Link">
+                            <br>
+
+                            <textarea style="display: none;" type="text" id="imageUrl" name="imageUrl"
+                                placeholder="Image Code"></textarea>
+
+                            <br>
+
+                            <input style="display:none" type="text" id="description" name="description"
+                                placeholder="Sub Title">
+
+                            <br>
+                            <div class="delete-container form-btn-container ">
+                                <button onclick="del()" type="submit " class="delete confirm-btn  ">Confirm Deletion</button>
+                            </div>
+                        </form>
+                      
+                    </div>
+
+            </section>
+
+
+        </div>
+
+        <section class="preview vivify fadeInBottom delay-650">
+
+            <div class="preview-container p1">
+                <div id="viewer"><img style="width: 150px"
+                        src="https://ebarnette15.files.wordpress.com/2013/03/loading-3.gif"></div>
+            </div>
+
+            <div class="preview-container p2">
+                <div id="viewer2"><img style="width: 150px"
+                        src="https://ebarnette15.files.wordpress.com/2013/03/loading-3.gif"></div>
+            </div>
+
+            <div class="preview-container p3">
+                <div id="viewer3"><img style="width: 150px"
+                        src="https://ebarnette15.files.wordpress.com/2013/03/loading-3.gif"></div>
+            </div>
+
+        </section>
+        <script>
+            function p1() {
+                document.getElementsByClassName("p1")[0].style.display = "block";
+                document.getElementsByClassName("p2")[0].style.display = "none";
+                document.getElementsByClassName("p3")[0].style.display = "none";
+
+            }
+
+            function p2() {
+                document.getElementsByClassName("p2")[0].style.display = "block";
+                document.getElementsByClassName("p1")[0].style.display = "none";
+                document.getElementsByClassName("p3")[0].style.display = "none";
+            }
+
+            function p3() {
+                document.getElementsByClassName("p3")[0].style.display = "block";
+                document.getElementsByClassName("p2")[0].style.display = "none";
+                document.getElementsByClassName("p1")[0].style.display = "none";
+            }
+        </script>
+        <div class="vertical-divider"></div>
+    </div>
+    <script>
+        window.setTimeout(loaded, 4500);
+
+        var element = document.getElementById('loader');
+
+        function loaded() {
+            element.style.display = 'none';
+        }
+    </script>
+    <div id="snackbar">Selection Confirmed</div>
+    <div id="delete">Post Deleted</div>
+    <script>
+        function snackbar() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () {
+                x.className = x.className.replace("show", "");
+            }, 3000);
+        }
+    </script>
+
+<script>
+        function del() {
+            var x = document.getElementById("delete");
+            x.className = "show";
+            setTimeout(function () {
+                x.className = x.className.replace("show", "");
+            }, 3000);
+        }
+    </script>
+    <script>
+        var instance = M.Tabs.getInstance(elem);
+    </script>
+    <footer>
+        <div class="footer-container ">
+            <p>Developed By Jacoby Broadnax</p>
+        </div>
+    </footer>
+</body>
+
+</html>

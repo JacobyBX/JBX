@@ -1,0 +1,256 @@
+
+/*-----------------------------------------------------------Splash Screen-------------------------------------------------------*/
+
+
+.splash-screen {background-color: rgb(254, 254, 254); width: 100%; position: fixed; left: 0px; top: 0px; height: 100%;z-index: 150;}
+
+.splash-container {margin: auto; width: 250px;margin-top: 40vh;}
+
+.splash-container > div > video {width: 250px;background-color: white;}
+
+.splash-container > img {width: 235px;margin-top: -190px;z-index: 15;position: relative;}
+
+
+/*------------------------------------------------------------General---------------------------------------------------------------*/
+
+body {font-family: roboto, sans-serif; padding: 0px; margin: 0px;;}
+
+.spacer {width: 100%; background-color: white; height: 120px;;}
+
+.form-container {margin: auto; width: 700px;}
+
+.brand-logo > img {width: 80px;margin-top: -8px;}
+
+.p2 {display: none;}
+
+.p3 {display: none;}
+
+
+.logo {width: 120px;float: left;margin-top: 10px;margin-left: 20px;}
+
+.text-container {float: left;margin-top: 5px;}
+
+.text-container > p {margin-top: -7px;;}
+
+.vertical-divider {float: left; border-right: solid lightgray 1px;width: 1px; height: 80vh;margin-left: 17px;}
+
+.top {margin: auto; width: 600px;;}
+
+
+
+.btn-container {margin: auto; width: 150px;}
+
+form {margin-bottom: 100px;}
+
+.company-logo {border-bottom: solid #ffffff1f 1px;padding-bottom: 20px;margin-top: 50px;}
+
+.divider {background-color: lightgray;width: 100%; height: 1px; }
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 35px;
+    font-size: 17px;
+ 
+    border-radius: 7px;;
+    font-weight: bold;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+
+  #delete {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: white;
+    color: red;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 35px;
+    font-size: 17px;
+ 
+    border-radius: 7px;;
+    font-weight: bold;
+  }
+  
+  #delete.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+
+/*--------------------------------------------------------------Form Styling-------------------------------------------------------*/
+
+#webform > input {width: 100%; background-color: white; border: solid 1px lightgray; padding: 0px; height: 35px;padding-left: 7px;border-radius:5px; margin-top: 10px;margin-bottom: 6px ;}
+
+#webform {width:300px; ;}
+
+#webform > label {padding-top: 10px;}
+
+.imgbb-button {background-color: white;border-radius: 5px !important;}
+
+#webform > textarea {border: none; width: 100%;background-color: white;border: solid 1px lightgray; border-radius: 5px; margin-top: 10px;;}
+
+.confirm-btn { color: white; border: none;background-color: black;padding: 7px;padding-left: 12px; padding-right: 12px; border-radius: 5px;transition: 0.1s ease;border: solid 1.5px white; ;}
+
+.confirm-btn:hover {color: black;background-color: white; border: solid 1.5px black; cursor: pointer;;}
+
+.form-btn-container {margin: auto; width: 70px;margin-top: 10px;;}
+
+#success {width: 250px; height: 100vh;}
+
+#success > h4 {font-weight: bold;float: left;margin-top: 3px; margin-left: 5px;;}
+
+#success > i {float: left; ;}
+
+#success > p {float: left; margin-top: 0px;;}
+
+
+
+/*---------------------------------------------------------Tab Navigation-----------------------------------*/
+
+.tab-navigation > button {background-color: white;float: left;border: none;border: solid 1px lightgray; padding: 3px;border-radius: 50px;;padding-left: 6px; padding-right: 6px; transition: 0.15s ease; margin-left: 5px;margin-top: -3px;margin-bottom: 10px;}
+
+.tab-navigation > button:hover {background-color: rgb(231, 231, 231);cursor: pointer;border-color: white;}
+
+.tab-navigation > button:focus {outline: none;;}
+
+.tab-navigation > h4 {float: left;font-weight: normal; border-right: solid 1px lightgray; padding-right:7px;margin: 0px;font-size: 14px;}
+
+
+
+
+/*--------------------------------------------------------------Nav Styling--------------------------------------------------------*/
+
+header {position: fixed; left: 0px; width: 100%; z-index: 500;;}
+
+nav {background-color:white;height: 65px; margin: auto; width: 970px;
+;margin-top: 20px;border-radius: 6px;border: solid 1px lightgray;
+;}
+
+nav > ul > li {display: inline-block}
+
+nav > ul > li > a {text-decoration: none; color: black;margin-left: 20px;}
+
+nav > ul {float:right;margin-top: 22px;margin-right: 60px;}
+
+/*--------------------------------------------------------------Text Styling------------------------------------------------*/
+
+.text-h5 {font-size: 25px; margin: 0px;}
+
+.top-nav > p {width: 300px;;}
+
+/*--------------------------------------------------------------Layout Styling-----------------------------------------------------*/
+
+.left-sect {float: left;border-right: solid 1px lightgray;height: 80vh;padding-right: 25px;}
+
+.right-sect {float: left;margin-left: 30px;margin-top: -3px;;}
+
+.main-content {margin: auto ;width: 1000px;}
+
+.side-navigation {;}
+
+.preview {float: left;margin-left: 40px;;}
+
+.preview-container {margin-top:65px;;}
+
+/*----------------------------------------------Button Styling--------------------------------------------------*/
+
+.large-button {background-color: white; border: solid lightgray 1px ; padding: 10px;border-radius: 50px;padding-top: 12px;padding-bottom: 12px;float: left;padding-right: 12px;margin-left: 10px;}
+
+.large-button > i {float: left;margin-top: -3px;}
+
+.side-navigation > a {float:left;margin-top:15px;transition: 0.2s ease;text-decoration: none; color: black;}
+
+.side-navigation > a:hover {cursor: pointer;font-size: 17px;}
+
+.side-navigation {}
+
+.default-buttons {width: 100%;text-align: center;padding-top: 5px;padding-bottom: 5px;;}
+
+.side-navigation > a > i {float: left;margin-top: -2px;}
+
+.leading-top-border {border-top: solid 1px lightgray;padding-top: 20px;margin-top: 20px !important;}
+
+.delete {color: white; background-color: red;transition: 0.2s ease; ;}
+
+.delete-container {width: 130px;margin-top: -50px;;}
+
+/*---------------------------------------Iframe Target-------------------------------------------------*/
+
+#delete-section > iframe {position: absolute;margin-left: -775px; width: 790px;height: 100vh;}
+
+/*---------------------------------------Pulled Endpoint ----------------------------------------------*/
+
+.option-image-container > a {pointer-events: none;}
+
+.option-image-container > a >img {width: 160px;margin-top: 10px;border-radius: 6px;}
+
+.option-button {height: 400px;transform: rotateZ(90deg);width: 250px;border: solid 1px lightgray; background-color: white;;margin-bottom: -130px;margin-left: 75px;border-radius: 7px;;}
+
+.delete-option:focus {outline: none; border: solid 2px red;}
+
+.delete-option:hover {cursor: pointer;}
+
+.flipped {transform: rotateZ(180deg)}
+
+.option-wrapper {overflow-y: scroll;height: 450px; white-space: nowrap;width: 415px;;transform: rotateZ(-90deg);margin-left: -12px;;}
+
+.option-wrapper::-webkit-scrollbar {
+    width: 12px;}
+
+.option-container {transform: rotateZ(180deg)}
+
+.option-container > h4 {white-space: normal;}
+
+
+
+.option-container > p {white-space: normal;}
+
+.option-spacer {width: 400px; height: 45px; background-color: white;margin-bottom: -110px;}
+
+/*--------------------------------------------------------------------------------Footer -------------------------------------------------------------------------------------------*/
+
+footer {position: fixed; width: 100%; bottom: 10px;z-index: 500 ;}
+
+.footer-container {margin: auto; width: 200px;border: solid 1px lightgray; border-radius: 50px; ;background-color: white;}
+
+.footer-container > p {text-align: center; font-size: 12px; margin: 5px;color: rgb(141, 141, 141);}

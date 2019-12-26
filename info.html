@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="shortcut icon" href="/Branding/">
+</head>
+
+<body>
+
+    <nav style="box-shadow: none !important;;">
+        <div class="nav-wrapper white">
+            <a href="#!" class="brand-logo center"></a>
+        </div>
+    </nav>
+    <div class="form-container">
+        <div class="top">
+            <img class="logo" src="/Branding/Logo.svg">
+            <div class="text-container">
+                <h4 style="font-weight:bold;">Basic Website Information</h4>
+                <p>This information will be critical to developing your website properly</p>
+            </div>
+        </div>
+        <br>
+
+        <form  name="Website Request" method="POST" netlify>
+            <input style="opacity: 0;">
+            <div class="input-field">
+                <input id="ab" type="text">
+                <label for="ab">Do you have a location if not leave this field blank?</label>
+            </div>
+
+            <div class="input-field">
+                <textarea id="bc" class="materialize-textarea"></textarea>
+                <label for="bc">List your business hours below</label>
+            </div>
+
+            <label>
+                <input value="true" type="checkbox" class="filled-in" />
+                <span>I Already Have a Domain EX: www.website.com</span>
+            </label>
+
+            <label style="margin-left:20px">
+                <input value="true" type="checkbox" class="filled-in" />
+                <span>I Need A Domain</span>
+            </label>
+
+            <div class="input-field">
+                <input id="ef" type="text">
+                <label for="ef">Fill out the name of your domain or what you want your domain to be.</label>
+            </div>
+
+            <label>
+                <input value="true" type="checkbox" class="filled-in" />
+                <span>I Have A Logo</span>
+            </label>
+
+            <label style="margin-left:20px">
+                <input value="true" type="checkbox" class="filled-in" />
+                <span>I Need A Logo</span>
+            </label>
+
+            
+            <div class = "file-field input-field">
+                    <div class = "btn black">
+                       <span>Browse</span>
+                       <input type = "file" />
+                    </div>
+                    
+                    <div class = "file-path-wrapper">
+                       <input class = "file-path validate" type = "text"
+                          placeholder = "Upload Your Logo If You Have One" />
+                    </div>
+                 </div>
+
+            <div class="input-field">
+                <input id="hz" type="text">
+                <label for="hz">Enter Any Brand Colors You Would Like To See EX: Red Blue Gray</label>
+            </div>
+
+
+            <div class="input-field">
+                <input id="eq" type="number">
+                <label for="eq">Business Phone Number</label>
+            </div>
+
+            <div class="input-field">
+                <input id="qr" type="email">
+                <label for="qr">Business E-Mail</label>
+            </div>
+
+            <div class="input-field">
+                <textarea id="po" class="materialize-textarea"></textarea>
+                <label for="po">Paste any social media links here EX: Twitter Instagram Facebook.</label>
+            </div>
+
+            <div class="input-field">
+                <textarea id="ib" class="materialize-textarea"></textarea>
+                <label for="ib">List some of your pricing options if applicable</label>
+            </div>
+
+            <div class="input-field">
+                <textarea id="if" class="materialize-textarea"></textarea>
+                <label for="if">Give a brief description of what your business does.</label>
+            </div>
+
+            <div class="input-field">
+                <textarea id="vi" class="materialize-textarea"></textarea>
+                <label for="vi">Any specific requests for your website?</label>
+            </div>
+
+         
+
+            <div class="btn-container">
+                <button class="btn waves-effect waves-light black" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                </button></div>
+        </form>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+        M.updateTextFields();
+    });
+</script>
+
+</html>

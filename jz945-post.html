@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang=“en”>
+
+<head>
+    <meta name="robots" content="noindex" />
+    <title>JZ 94.5 | JBX Management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/vivify.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js">
+        < script type = "text/javascript"
+        src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" >
+    </script>
+    </script>
+
+    <!----------------------------------------Templeting Engine For Data 1------------------------------------------->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data1', function (
+                data) {
+                var template = Handlebars.compile($('#item-template').html())
+                $('#viewer').html(template(data.data1))
+            })
+        })
+    </script>
+    <script id="item-template" type="text/x-handlebars-template">
+
+        <div class="option-wrapper">
+        <div class="flipped">
+    <div class="option-spacer"></div>
+        {{#each this}}
+        <button class="option-button">
+            <div class="option-container">
+                
+                <div class="option-image-container">{{{imageUrl}}}</div>
+                <h4>{{title}}</h4>
+                {{subTitle}}
+               <p>{{description}}</p>
+                  
+            </div> 
+        </button>  
+        <br> 
+            {{/each}}
+<div class="option-spacer" style="height: 70px;"></div>
+          
+        </div>
+
+    </div>
+        </script>
+    <!----------------------------------------Templeting Engine For Data 2------------------------------------------->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data2', function (
+                data) {
+                var template = Handlebars.compile($('#item-template2').html())
+                $('#viewer2').html(template(data.data2))
+            })
+        })
+    </script>
+    <script id="item-template2" type="text/x-handlebars-template">
+        <div class="option-wrapper">
+        <div class="flipped">
+        <div class="option-spacer"></div>
+            {{#each this}}
+            <button class="option-button">
+                <div class="option-container">
+                    
+                    <div class="option-image-container">{{{imageUrl}}}</div>
+                    <h4>{{title}}</h4>
+                   <p>{{description}}</p>
+                      
+                </div> 
+            </button>  
+            <br> 
+                {{/each}}
+                <div class="option-spacer opec" style="height: 70px;"></div>
+            </div>
+            </div>
+            </script>
+    <!----------------------------------------Templeting Engine For Data 3------------------------------------------->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.getJSON('https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data3', function (
+                data) {
+                var template = Handlebars.compile($('#item-template3').html())
+                $('#viewer3').html(template(data.data3))
+            })
+        })
+    </script>
+    <script id="item-template3" type="text/x-handlebars-template">
+        <div class="option-wrapper">
+            <div class="flipped">
+            <div class="option-spacer"></div>
+                {{#each this}}
+                <button class="option-button">
+                    <div class="option-container">
+                        
+                        <div class="option-image-container">{{{imageUrl}}}</div>
+                        <h4>{{title}}</h4>
+                       <p>{{description}}</p>
+                          
+                    </div> 
+                </button>  
+                <br> 
+                    {{/each}}
+                    <div class="option-spacer opec" ></div>
+                </div>
+                </div>
+                </script>
+</head>
+
+<body>
+    <!----------------------------------------Pulling Post Script Code------------------------------------------->
+    <script type="text/javascript" id="postscript1" src="data1.js">
+
+    </script>
+    <script type="text/javascript" id="postscript2" src="data2.js">
+
+    </script>
+    <script type="text/javascript" id="postscript3" src="data3.js">
+
+    </script>
+    <!----------------------------------------Splash Screen------------------------------------------->
+    <div class="splash-screen vivify fadeOut delay-3750" id="loader">
+        <div class="splash-container ">
+            <img class="vivify pullLeft delay-2750" style="margin-left: 190px; width: 97px;margin-bottom: -157px;;"
+                src="branding/JBX X.svg">
+            <div class="vivify fadeIn delay-500">
+                <video class="vivify fadeOut delay-2000" autoplay loop muted>
+                    <source src="JB Logo Animated.mp4">
+                </video>
+            </div>
+            <img class="vivify fadeIn delay-2500" src="branding/Logo.svg">
+
+        </div>
+    </div>
+    <header>
+        <!----------------------------------------Navigation------------------------------------------->
+        <nav class="vivify fadeIn delay-2750">
+
+            <img class="logo" src="Branding/JBX Beta Logo.svg">
+            <ul class="right">
+                <li>
+                    <a href="" class="black-text">Contact Us</a>
+                </li>
+                <li>
+                    <a href="" class="black-text">Report An Issue</a>
+                </li>
+                <li>
+                    <a href="" class="black-text">Privacy Policy</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="spacer"></div>
+    <!----------------------------------------Side Navigation------------------------------------------->
+    <div class="main-content">
+        <aside class="left-sect vivify fadeInBottom delay-4000">
+            <div class="company-branding">
+                <img style="filter: invert(100);" class="company-logo" src="/Company Logo/Jz large white logo.svg">
+            </div>
+            <div class="side-navigation">
+                <a class="large-button"><i class="material-icons left">add</i>New Post</a>
+                <br>
+
+                <a href="/jz945-delete.html" class="leading-top-border default-buttons ">Delete Post</a>
+                <br>
+
+
+            </div>
+        </aside>
+
+
+
+        <div class="right-sect vivify fadeInBottom delay-4250">
+
+            <section>
+                <div class="top-nav">
+                    <h5 class="text-h5">New Post</h5>
+                    <p>Select where your post is going then fill out the form below.</p>
+
+                    <div class="tab-navigation">
+                        <h4>Select</h4>
+                        <button
+                            onclick="inject1();p1();snackbar();document.getElementById('webform').action = 'https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data1'">Slideshow</button>
+                        <button
+                            onclick="inject2();p2();snackbar();document.getElementById('webform').action = 'https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data2'">DJ
+                            Section</button>
+                        <button
+                            onclick="inject3();p3();snackbar();document.getElementById('webform').action = 'https://v2-api.sheety.co/1c0174d5b32dbebdf6f1e14d6ba67a4f/jz945/data3'">Sales
+                            Team</button>
+                    </div>
+
+                    <br>
+                    <script>
+                        function inject1() {
+                            document.getElementById("postscript2").src = "#";
+                            document.getElementById("postscript3").src = "#";
+                            document.getElementById("postscript1").src = "/data1.js";
+                            document.getElementById("label1").innerHTML = "Slide Title";
+                            document.getElementById("label2").innerHTML = "Button Link";
+                            document.getElementById("label3").innerHTML = "Image Code";
+                            document.getElementById("label4").innerHTML = "Description";
+                        }
+                    </script>
+                    <script>
+                        function inject2() {
+                            document.getElementById("postscript1").src = "#";
+                            document.getElementById("postscript3").src = "#";
+                            document.getElementById("postscript2").src = "/data2.js";
+                            document.getElementById("label1").innerHTML = "DJ Name";
+                            document.getElementById("label2").innerHTML = "Facebook Link";
+                            document.getElementById("label3").innerHTML = "Image Code";
+                            document.getElementById("label4").innerHTML = "Description";
+                        }
+                    </script>
+                    <script>
+                        function inject3() {
+                            document.getElementById("postscript1").src = "#";
+                            document.getElementById("postscript2").src = "#";
+                            document.getElementById("postscript3").src = "/data3.js";
+                            document.getElementById("label1").innerHTML = "Name";
+                            document.getElementById("label2").innerHTML = "Facebook Link";
+                            document.getElementById("label3").innerHTML = "Image Code";
+                            document.getElementById("label4").innerHTML = "Description";
+                        }
+                    </script>
+                    <div id="test1" class="col s12">
+                        <form id="webform" action="">
+
+                            <label id="label1"></label>
+                            <input type="text" id="title" name="title">
+                            <br>
+                            <label id="label2"></label>
+                            <input type="text" id="link" name="link">
+                            <br>
+                            <label id="label3"></label>
+                            <textarea type="text" id="imageUrl" name="imageUrl"></textarea>
+
+                            <br>
+                            <label id="label4"></label>
+                            <input type="text" id="description" name="description">
+                            <script async src="https://imgbb.com/upload.js" data-auto-insert="html-embed-medium">
+                            </script>
+                            <br>
+                            <div class="form-btn-container">
+                                <button type="submit" class="confirm-btn">Confirm</button>
+                            </div>
+                        </form>
+                        <div id="success" style="display: none">
+                            <i class="material-icons">check</i>
+                            <h4>Post Complete.</h4>
+                            <br>
+                            <p> Visit Your Website or Refresh This Page To View The Post.</p>
+                        </div>
+                    </div>
+
+            </section>
+
+
+        </div>
+
+        <section class="preview vivify fadeInBottom delay-4500">
+
+            <div class="preview-container p1">
+                <div id="viewer"><img style="width: 150px"
+                        src="https://ebarnette15.files.wordpress.com/2013/03/loading-3.gif"></div>
+            </div>
+
+            <div class="preview-container p2">
+                <div id="viewer2"><img style="width: 150px"
+                        src="https://ebarnette15.files.wordpress.com/2013/03/loading-3.gif"></div>
+            </div>
+
+            <div class="preview-container p3">
+                <div id="viewer3"><img style="width: 150px"
+                        src="https://ebarnette15.files.wordpress.com/2013/03/loading-3.gif"></div>
+            </div>
+
+        </section>
+        <div id="delete-section">
+            <iframe src="https://jbx.netlify.com/jz945-delete.html"></iframe>
+        </div>
+        <script>
+            function p1() {
+                document.getElementsByClassName("p1")[0].style.display = "block";
+                document.getElementsByClassName("p2")[0].style.display = "none";
+                document.getElementsByClassName("p3")[0].style.display = "none";
+            }
+
+            function p2() {
+                document.getElementsByClassName("p2")[0].style.display = "block";
+                document.getElementsByClassName("p1")[0].style.display = "none";
+                document.getElementsByClassName("p3")[0].style.display = "none";
+            }
+
+            function p3() {
+                document.getElementsByClassName("p3")[0].style.display = "block";
+                document.getElementsByClassName("p2")[0].styxle.display = "none";
+                document.getElementsByClassName("p1")[0].style.display = "none";
+            }
+        </script>
+        <div class="vertical-divider"></div>
+    </div>
+   
+    <script>
+        window.setTimeout(loaded, 4500);
+
+        var element = document.getElementById('loader');
+
+        function loaded() {
+            element.style.display = 'none';
+        }
+    </script>
+    <div id="snackbar">Selection Confirmed</div>
+    <script>
+        function snackbar() {
+            var x = document.getElementById("snackbar");
+            x.className = "show";
+            setTimeout(function () {
+                x.className = x.className.replace("show", "");
+            }, 3000);
+        }
+    </script>
+    <script>
+        var instance = M.Tabs.getInstance(elem);
+    </script>
+    <footer>
+        <div class="footer-container ">
+            <p>Developed By Jacoby Broadnax</p>
+        </div>
+    </footer>
+</body>
+
+</html>
